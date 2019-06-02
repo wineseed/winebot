@@ -1,1 +1,1 @@
-worker: python 봇 만들기.py
+worker: python jyman.py
