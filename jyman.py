@@ -60,13 +60,22 @@ async def on_message(message):
         await message.channel.send("나닛--!!!")
     if message.content.startswith("!햄보칸플리퍼"):
         await message.channel.send("a제곱 더하기 b제곱은 c제곱 피타고라ㅅ..")
-    if message.content.startswith("?")
+    if message.content.startswith("?"):
         await message.channel.send("뭐요....")
-    if message.content.startswith("!모두")
+    if message.content.startswith("!모두"):
         await message.channel.send("여러분! 이사람의 말을 듣지않으면 저한테 맞을줄 아세요!")
-    if message.content.startswith("!소개")
+    if message.content.startswith("!소개"):
         await message.channel.send("전..영웅입니다")
-
+    if message.content.startswith("ㅂ"):
+        await message.channel.send("그럼 안녕히.......")
+    if message.content.startswith("ㅋ"):
+        await message.channel.send("ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ")
+        awiat message.channel.send("LOL   하하하하핳하하ㅏ")
+        await message.channel.send(".......뭐가 웃기죠?")
+    if message.content.startswith("!옵치"):
+        await message.channel.send("석양이.....으억")
+    if message.content.startswith("!오버워치"):
+        await message.channel.send("하늘에서! 정의가! 으억.....")
 
         
 access_token = os.environ["BOT_TOKEN"]    
