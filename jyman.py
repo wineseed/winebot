@@ -70,7 +70,7 @@ async def on_message(message):
         await message.channel.send("그럼 안녕히.......")
     if message.content.startswith("ㅋ"):
         await message.channel.send("ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ")
-        awiat message.channel.send("LOL   하하하하핳하하ㅏ")
+        await message.channel.send("LOL   하하하하핳하하ㅏ")
         await message.channel.send(".......뭐가 웃기죠?")
     if message.content.startswith("!옵치"):
         await message.channel.send("석양이.....으억")
