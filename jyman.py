@@ -76,6 +76,15 @@ async def on_message(message):
         await message.channel.send("석양이.....으억")
     if message.content.startswith("!오버워치"):
         await message.channel.send("하늘에서! 정의가! 으억.....")
+    if message.content.startswith("ㄹㅇ"):
+        await message.channel.send("진짜요!!!!")
+    if message.content.startswith("!빠루"):
+        await message.channel.send("고든프리맨, 그는 좋은박사였지만.....")
+        await message.channel.send("(하프라이프 후속작 안나온대)")
+    if message.content.startswith("!고든프리맨"):
+        await message.channel.send("그는 자유인이다!!!!!")
+    if message.content.startswith("욕"):
+        await message.channel.send("뒤지실?")
 
         
 access_token = os.environ["BOT_TOKEN"]    
