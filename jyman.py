@@ -17,7 +17,7 @@ async def on_message(message):
     if message.content.startswith("!안녕"):
         a = ['안녕! 나는 준영맨이야!', '안녕! 내가 널 구하러 왔어!', '안녕! 어디서 많이 본거같은데...', '안녕! 무슨일이야?']
         await message.channel.send(random.choice(a))         
-    if message.content.startswith("!운빨게임")
+    if message.content.startswith("!운빨게임"):
         luck = ['니가 이김', '니가 짐', '비김']
         await message.channel.send(random.choice(luck), "이라는 결과가 나왔네?")
     if message.content.startswith("!도움"):
