@@ -1,5 +1,6 @@
 import discord
 import os
+import random
 
 client = discord.Client()
 
@@ -14,8 +15,8 @@ async def on_ready():
 @client.event
 async def on_message(message):
     if message.content.startswith("!안녕"):
-        await message.channel.send("안녕! 난 준영맨이야!")
-        await message.channel.send("필요한게 있다면 !에 도움을 입력해줘!")      
+        a = ['안녕! 나는 준영맨이야!', '안녕! 내가 널 구하러 왔어!', '안녕! 어디서 많이 본거같은데...', '안녕! 무슨일이야?']
+        await message.channel.send(random.choice(a))         
     if message.content.startswith("!도움"):
         await message.channel.send("내가 도와주지!")
         await message.channel.send("간드아!!!!!!!!!!")
@@ -85,6 +86,10 @@ async def on_message(message):
         await message.channel.send("그는 자유인이다!!!!!")
     if message.content.startswith("욕"):
         await message.channel.send("뒤지실?")
+    if message.content.startswith("!도배"):
+        await message.channel.send("너 진짜 미친놈인가 보구나.")
+        await message.channel.send("샌즈 올림")
+        
 
         
 access_token = os.environ["BOT_TOKEN"]    
