@@ -10,8 +10,9 @@ async def on_ready():
     print(client.user.name)
     print(client.user.id)
     print("================")
-    
 
+food = ['카레', '스파게티', '집밥', '라면', '짜장면', '김치볶음밥', '우동', '쫄면', '국수', '돈까스', '엿(?)', '삼계탕', '치킨']
+    
 @client.event
 async def on_message(message):
     if message.content.startswith("!안녕"):
@@ -20,6 +21,10 @@ async def on_message(message):
     if message.content.startswith("!운빨게임"):
         luck = ['니가 이김', '니가 짐', '비김']
         await message.channel.send(random.choice(luck))
+    if message.content.startswith("!배고파"):
+        await message.channel.send("배고파요?")
+        await message.channel.send("그럼 오늘은...")
+        await message.channel.send(random.choice(food), "(은)는 어때요?")
     if message.content.startswith("!도움"):
         await message.channel.send("내가 도와주지!")
         await message.channel.send("간드아!!!!!!!!!!")
