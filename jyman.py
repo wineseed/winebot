@@ -22,9 +22,10 @@ async def on_message(message):
         luck = ['니가 이김', '니가 짐', '비김']
         await message.channel.send(random.choice(luck))
     if message.content.startswith("!배고파"):
-        await message.channel.send("배고파요?")
+        await message.channel.send("배고파?")
         await message.channel.send("그럼 오늘은...")
         await message.channel.send(random.choice(food))
+        await message.channel.send("어때?")
     if message.content.startswith("!도움"):
         await message.channel.send("내가 도와주지!")
         await message.channel.send("간드아!!!!!!!!!!")
