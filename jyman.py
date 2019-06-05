@@ -24,7 +24,7 @@ async def on_message(message):
     if message.content.startswith("!배고파"):
         await message.channel.send("배고파요?")
         await message.channel.send("그럼 오늘은...")
-        await message.channel.send(random.choice(food), "(은)는 어때요?")
+        await message.channel.send(random.choice(food))
     if message.content.startswith("!도움"):
         await message.channel.send("내가 도와주지!")
         await message.channel.send("간드아!!!!!!!!!!")
