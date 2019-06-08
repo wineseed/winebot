@@ -100,7 +100,7 @@ async def on_message(message):
         await message.channel.send("샌즈 올림")
     if message.content.startswith(“테스트욕”):
         await message.channel.send(“욕했네?? 관리자께 보고해야지”)
-        await message.g
+        await client.guild_user()send(“누가 욕했습니다”)
 
         
 access_token = os.environ["BOT_TOKEN"]    
