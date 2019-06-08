@@ -76,9 +76,9 @@ async def on_message(message):
         await message.channel.send("여러분! 이사람의 말을 듣지않으면 저한테 맞을줄 아세요!")
     if message.content.startswith("!소개"):
         await message.channel.send("전..영웅입니다")
-    if message.content.startswith("ㅂ"):
+    if message.content.startswith("!ㅂ"):
         await message.channel.send("그럼 안녕히.......")
-    if message.content.startswith("ㅋ"):
+    if message.content.startswith("!ㅋ"):
         await message.channel.send("ㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎ")
         await message.channel.send("LOL   하하하하핳하하ㅏ")
         await message.channel.send(".......뭐가 웃기죠?")
@@ -86,7 +86,7 @@ async def on_message(message):
         await message.channel.send("석양이.....으억")
     if message.content.startswith("!오버워치"):
         await message.channel.send("하늘에서! 정의가! 으억.....")
-    if message.content.startswith("ㄹㅇ"):
+    if message.content.startswith("!ㄹㅇ"):
         await message.channel.send("진짜요!!!!")
     if message.content.startswith("!빠루"):
         await message.channel.send("고든프리맨, 그는 좋은박사였지만.....")
@@ -98,9 +98,6 @@ async def on_message(message):
     if message.content.startswith("!도배"):
         await message.channel.send("너 진짜 미친놈인가 보구나.")
         await message.channel.send("샌즈 올림")
-    if message.content.startswith(“테스트욕”):
-        await message.channel.send(“욕했네?? 관리자께 보고해야지”)
-        await client.guild_user(586716396595970063)send(“누가 욕했습니다”)
 
         
 access_token = os.environ["BOT_TOKEN"]    
